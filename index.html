@@ -3,72 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsidian Field - Game Dev</title>
+    <title>Obsidian Field</title>
     <style>
         body {
             background-color: #0b0f19;
             color: #ffffff;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            text-align: center;
             margin: 0;
-            padding: 30px 20px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            box-sizing: border-box;
         }
-        .logo {
+        .header {
             color: #a855f7;
             font-size: 1.1rem;
             font-weight: bold;
-            margin-bottom: 24px;
+            margin: 20px 0 30px 0;
             display: flex;
             align-items: center;
             gap: 8px;
         }
-        h1 {
-            font-size: 2rem;
-            font-weight: 800;
-            line-height: 1.3;
+        .card {
+            background-color: #131b2e;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 24px;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #ffffff 30%, #a855f7 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        .icon {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            color: #ffffff;
         }
         p {
             color: #9ca3af;
-            font-size: 1rem;
-            max-width: 100%;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            padding: 0 10px;
-        }
-        .btn {
-            background-color: #6366f1;
-            color: white;
-            border: none;
-            padding: 14px 32px;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 12px;
-            cursor: pointer;
-            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="logo">
+    <div class="header">
         <span>◻️</span> Obsidian Field
     </div>
 
-    <h1>Welcome to<br>Obsidian Field<br>Game Dev</h1>
+    <div class="card">
+        <div class="icon">🎮</div>
+        <h2>Game & Engine Dev</h2>
+        <p>Designing core gameplay mechanics, optimizing systems, and structuring project architectures.</p>
+    </div>
 
-    <p>A leading platform for video game development, advanced 3D modeling, and crafting immersive digital experiences.</p>
+    <div class="card">
+        <div class="icon">📦</div>
+        <h2>3D Modeling & Assets</h2>
+        <p>Specialized hard-surface modeling, tactile texturing, and crafting stunning visual details.</p>
+    </div>
 
-    <button class="btn">Start Exploring</button>
+    <div class="card">
+        <div class="icon">💻</div>
+        <h2>Backend & Programming</h2>
+        <p>Building robust server logic and web tools to support digital projects.</p>
+    </div>
 
 </body>
 </html>
